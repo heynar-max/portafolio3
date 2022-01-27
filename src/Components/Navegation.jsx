@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 import Separador from '../Style/Separador';
 import Logo from '../image/logo.png'
+import { Icon } from '../Style/Icon';
+
+
+
 
 const Navegation = () => {
     return (
@@ -19,11 +23,11 @@ const Navegation = () => {
                 </li>
                 <Separador/>
                 <li className='nav-item'>
-                    <NavLink to="/skills" activeClassName="active-class" exact>skills</NavLink>
+                    <NavLink to="/education" activeClassName="active-class" exact>education</NavLink>
                 </li>
                 <Separador/>
                 <li className='nav-item'>
-                    <NavLink to="/education" activeClassName="active-class" exact>education</NavLink>
+                    <NavLink to="/skills" activeClassName="active-class" exact>skill</NavLink>
                 </li>
                 <Separador/>
                 <li className='nav-item'>
@@ -33,6 +37,14 @@ const Navegation = () => {
                 <li className='nav-item'>
                     <NavLink to="/contact" activeClassName="active-class" exact>contact</NavLink>
                 </li>
+
+                
+                <div className='iconos'>
+                    <a href="https://www.linkedin.com/in/heynar-soto-holguin-bb7a43213/" target="_blank" rel="noreferrer" ><Icon className="fab fa-linkedin-in" /></a>
+                    <a href='https://www.instagram.com/heynar_max/' target="_blank" rel="noreferrer"><Icon className="fab fa-instagram" /></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><Icon className="fab fa-facebook-f" /></a>
+
+                </div>
             </ul>
         </NavbarStyle>
     )
@@ -44,7 +56,7 @@ const NavbarStyle = styled.div`
     height: 100%;
     width: 100%;
     flex-direction: row;
-    margin-top: -12rem;
+    margin-top: -7rem;
 
     .logo{
         width: 100%;
@@ -52,7 +64,7 @@ const NavbarStyle = styled.div`
         flex-direction: row;
         margin-bottom:5rem;
         img{
-            width: 50%;
+            width: 60%;
         }
     }
 
@@ -60,7 +72,6 @@ const NavbarStyle = styled.div`
             width: 100%;
             text-align: center;
             
-
             
             .active-class{
                 color: var(--negro);
@@ -69,53 +80,52 @@ const NavbarStyle = styled.div`
                     height: 1px;
                     margin-left: 0%;
                     margin-right: 50%;
-                    background: #ef106e;
+                    background-color: var(--fucsia)
                     width: 68%;
                 }
                 
                 
                 
             }
+            
                 li{
                     display: block;
-                    text-align: center;
+                    text-align: left;
 
                     
                     a{
                         color: var(--negro);
                         display: block;
-                        padding: .25rem 7rem;
+                        padding: .25rem 5rem;
                         position: relative;
                         z-index: 10;
-                        font-size: .8rem;
+                        font-size: .7rem;
                         text-transform: uppercase;
                         transition: all .4s ease-in-out;
-                        font-weight: 550;
+                        font-weight: 600;
                         letter-spacing: 1px;
                         left: -30px;
-
                         
-
                             &::after{
                                 content: '';
                                 position: absolute;
-                                top: 10px;
-                                left: 80px;
+                                top: 11px;
+                                left: 70px;
                                 width: 10px;
                                 height: 1px;
-                                background: #ef106e;
+                                background-color: var(--fucsia)
 
                             }
 
                             &::before{
                                 content: "";
                                 position: absolute;
-                                top: 10px;
-                                left: 80px;
+                                top: 11px;
+                                left: 70px;
                                 width: 10px;
                                 height: 1px;
                                 transition: all 0.2s linear;
-                                background: #ef106e;
+                                background-color: var(--fucsia)
                             }
                     }
                 }
@@ -124,6 +134,19 @@ const NavbarStyle = styled.div`
                             height: 100%;
                             height: 1px;
                             
+                            }
+                            .iconos{
+                                margin-top: 5rem;
+                                display: flex;
+                                justify-content: center;
+                                
+                                    i{
+                                        color: var(--gris);
+                                        width: 40px;
+                                        line-height: 100px;
+                                        text-align: center;
+                                        font-size: 18px;
+                                    }
                             }
             
         }

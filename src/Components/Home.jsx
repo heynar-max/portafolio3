@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import evan from '../image/evan.jpg'
+import evan from '../image/heynarpor.jpg'
 
 const Home = () => {
     return (
@@ -9,7 +9,10 @@ const Home = () => {
             <div className='primera'>
                 <img src={evan} alt=''/>
                     <div className='text'>
-                        <h1>hola</h1>
+                        <h1>hello i´m</h1>
+                        <h2>heynar Soto holguin</h2>
+                        <h3>FRONTEND DEVELOPER</h3>
+
                     </div>
             </div>
             </div>
@@ -17,8 +20,8 @@ const Home = () => {
     )
 }
 const PortafolioStyle = styled.div`
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     height: 100%;
     width: 100%;
     
@@ -28,6 +31,7 @@ const PortafolioStyle = styled.div`
         align-items: center;
         width: 100%;
         position: relative;
+        height: 100%;
         justify-content: space-around;
         /* justify-content: center;
         align-items: center;
@@ -40,10 +44,38 @@ const PortafolioStyle = styled.div`
             }
         .text{
             position: absolute;
-            text-align: center;
+            
+            
+
+            
             
             h1{
-            color: #9ffb09;
+            color: var(--blanco);
+            text-transform: uppercase;
+            margin-right: 50rem;
+            font-size: 2rem;
+            font-weight: 550;
+        }
+        h2{
+            color: var(--blanco);
+            text-transform: uppercase;
+            margin-right: 50rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+            
+        }
+        h3{
+            color: var(--fucsia);
+            font-size: 1rem;
+            width: 240px;
+            height: 30px;
+            background-color: var(--negro);
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            margin-top: 30px;
         }
         }
     }
