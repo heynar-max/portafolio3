@@ -27,11 +27,11 @@ function App() {
             <Route path="/about" exact>
               <Aboutpage />
             </Route>
-            <Route path="/skills" exact>
-              <Skillspage />
-            </Route>
             <Route path="/education" exact>
               <Educationpage />
+            </Route>
+            <Route path="/skills" exact>
+              <Skillspage />
             </Route>
             <Route path="/portafolio" exact>
               <Portafoliopage />

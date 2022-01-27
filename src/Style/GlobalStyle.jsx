@@ -3,18 +3,24 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     :root{
         --negro: #111;
-        --azul: #0a3cc5;
-        --rojo: #fa0808;
-        --verde: #33fb01;
+        --gris: #757575;
+        --blanco: #ffffff;
+        --fucsia: #ef106e;
     }
     *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.1rem; */
+    
+
+/* font-family: 'Bakbak One', cursive; */
+/* font-family: 'DM Serif Display', serif; */
+/* font-family: 'Oswald', sans-serif; */
+font-family: 'Raleway', sans-serif;
+/* font-family: 'Yeseva One', cursive; */
+    font-size: 1.1rem;
     
 }
 `;
